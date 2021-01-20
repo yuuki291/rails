@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_01_14_013531) do
+ActiveRecord::Schema.define(version: 2020_10_22_032813) do
 
   create_table "carts", force: :cascade do |t|
     t.datetime "created_at", null: false
@@ -27,12 +27,6 @@ ActiveRecord::Schema.define(version: 2021_01_14_013531) do
     t.integer "phone"
     t.string "adress"
     t.text "form"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "items", force: :cascade do |t|
-    t.integer "ticket"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
