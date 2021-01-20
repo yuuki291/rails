@@ -1,0 +1,13 @@
+<% if @probability == 1 %>
+   <h1>あなたは当選しました!!</h1>
+   <h1>おめでとうございます!!</h1>
+   <div style="width: 20vw" >
+     <%= image_tag("ticket.png") %><h2 style="position: relative; bottom: 6vw; left: 22vw; font-size: 5vw;">: x1</h2>
+     <h2>割引券ゲット</h2>
+   </div>
+<% elsif @probability == 0 %>
+      <h1>今回はハズレです。残念...</h1>
+<% end %>
+<%= link_to '支払い確定', item_sale_path %>
+
+

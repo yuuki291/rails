@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  novel: MyString
+  model: MyString
+  description: MyText
+  finish: MyString
+  title: MyString
+  price: 9.99
+
+two:
+  novel: MyString
+  model: MyString
+  description: MyText
+  finish: MyString
+  title: MyString
+  price: 9.99

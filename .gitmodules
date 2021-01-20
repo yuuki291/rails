@@ -1,0 +1,3 @@
+[submodule "EC"]
+	path = EC
+	url = https://github.com/yuuki291/EC.git

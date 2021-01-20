@@ -1,0 +1,39 @@
+<% content_for :body_class, 'bg-light' %>
+
+<section class="hero is-warning">
+ <div class="hero-body">
+  <div class="container">
+    <div class="show_title">
+      <P>映画化された</P>
+      <h1>BOOKS INTRODACTION</h1>
+    </div>
+    <h1 class = "book_title"><%= @product.title %></h1>
+    <ul class="pv1">
+      <% if @product.model? %>
+        <li class="inline-block"><%= @product.model %></li>
+      <% end %>
+
+      <% if @product.novel? %>
+        <li class="inline-block"><%= @product.novel %></li>
+      <% end %>
+
+      <% if @product.finish? %>
+        <li class="inline-block"><%= @product.finish %></li>
+      <% end %>
+
+      <% if @product.price? %>
+        <li class="inline-block"><%= @product.price %></li>
+      <% end %>
+
+      <li class="inline-block"><%= @product.description %></li>
+
+      <div class="show_img">
+        <%= image_tag(@product.image_url(:default) ,class: "product_img")%>
+      </div>
+      
+    </ul>
+    
+  </div>
+  <%= button_to 'Add_to_cart',line_items_path(product_id: @product), class: 'button_to' %>
+ </div>
+</section>

@@ -1,0 +1,103 @@
+// Place all the styles related to the products controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+
+.content{
+    background-color: rgb(247, 245, 230);
+    margin: 30px;
+    padding: 30px;
+}
+
+.slick-prev:before,
+.slick-next:before
+{
+    color: black;
+}
+
+
+.product_img{
+    width: 70vw;
+    padding-left: 8vw;
+}
+
+.text{
+    color: rgb(2, 170, 170);
+}
+
+.text > p {
+    border-bottom: 1px dashed #000;
+}
+
+.tips{
+    text-align: right;
+}
+
+.date{
+    color: black;
+}
+
+
+//-------------------------------------------------------------ここまでindex
+
+.button_to{
+   top: 13vw;
+   left: 6vw;
+   font-size: 2vw;
+}
+
+.show_title{
+    top:8vw;
+    left: 15vw;
+    font-size: 2vw;
+    p{
+        font-size: 5vw;
+        left: 5vw;
+    }
+}
+
+// position: relative;
+.pv1, .show_title, .book_title, p, .Add_to_cart, li, .show_img .product_img,
+.button_to{
+    position: relative;
+}
+
+.book_title, .pv1, .show_title, .controll a{
+    color: white;
+}
+
+
+.book_title{
+    top: 45vw;
+    font-size: 5vw;
+    left: 12vw;
+}
+
+.slick-list{
+    width: 1000vw;
+} 
+
+.pv1{
+    .show_img .product_img{
+        bottom: 20vw;
+        width: 50vw;
+        padding-left: 8vw;
+    }
+    li{
+        top: 50vw;
+        left: 10vw;
+        list-style-type: none;
+        font-size: 2.5vw;  
+        margin-top: 5vw;
+    }
+}
+
+
+
+.hero-body{
+    background-color: #006B8D;
+    width: 70vw;
+    height: 110vw;
+    margin-left: 10vw;
+}

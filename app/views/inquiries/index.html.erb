@@ -1,0 +1,32 @@
+<div class="toolbar">
+<%= link_to "新規作成", :new_inquiry , style:"font-size: 1.5vw;"%>
+</div>
+
+<% if @members.present? %>
+  <table class="list">
+    <thead>
+      <tr>
+        <th>お名前</th>
+        <th>電話番号</th>
+        <th>メールアドレス</th>
+        <th>お問い合わせ内容</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @members.each do |member| %>
+        <tr>
+          <td><%= member.name %></td>
+          <td><%= member.phone %></td>
+          <td><%= member.adress %></td>
+          <td><%= member.form %></td>
+          <td><%= link_to"編集",edit_inquiry_path(member) , style:"font-size: 1.5vw;"%></td>
+          <td><%= link_to"削除", inquiry_path(member), method: :delete,
+          data: { confirm: "削除してもよろしいですか?"} , style:"font-size: 1.5vw;"%></td>
+        </tr>
+        <% end %>
+        <% else %>
+        <p>情報なし</p>
+        <% end %>
+     <%= link_to "Home", products_path , style:"font-size: 1.5vw;"%>
+  </tbody>
+</table>

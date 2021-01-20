@@ -1,0 +1,30 @@
+<div class="keep-shopping pv1 mt4 has-text-right" style="margin-top: 2vw">
+  <%= link_to 'keep Shopping', products_path, class: 'button is-warning' %>
+</div>
+<hr/>
+<section class="section">
+   <%= render(@cart.line_items) %>
+   <div class="column">
+   <%= button_to 'Empty Cart', @cart, method: :delete, data: { confirm: "Are you sure?" }, class: "button-is"%>
+</div>
+<hr/>
+   <div class="columns">
+      <div class="column total">
+        <h4 class="title is-4">
+        <%= form_with(url: item_pay_path, method: :get ,local: true) do %>
+           <span class="f5">Total:<%=(@cart.total_price)%>円</span>
+    <div class= "script">
+           <script
+     type="text/javascript"
+     src="https://checkout.pay.jp"
+     class="payjp-button"
+     data-key="<%= ENV["PAYJP_PUBLIC_KEY"] %>">
+   </script>
+   </div>
+ <% end %>
+      </div>
+   </div>
+</section>
+<div>
+
+</div>
