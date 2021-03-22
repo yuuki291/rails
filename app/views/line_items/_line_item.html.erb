@@ -2,19 +2,19 @@
   <div class="fs">
     <%= line_item.quantity %>
   </div>
-    <div class="ga">
+    <div class="ga" style="margin-bottom:3vw;">
         <%= image_tag(line_item.product.image_url(:thumb),class: "product_img")%>
     </div>
-    <div class="chjks">
-      <%= line_item.product.title %>
+    <div class="chjks" style="margin-left:10vw;">
+      商品名:  <%= line_item.product.title %>
     </div>
 
-     <div class="hdsui">
-      <%= truncate(line_item.product.description, length: 140 ) %>
+     <div class="hdsui" style="margin-left:10vw;">
+      あらすじ:  <%= truncate(line_item.product.description, length: 140 ) %>
     </div>
     
-    <div class="hdsuicds">
-      <p><%= (line_item.total_price) %>円</p>
+    <div class="hdsuicds" style="margin-left:10vw;">
+      <p>単価:  <%= (line_item.total_price) %>円</p>
     </div>
 </div>
 

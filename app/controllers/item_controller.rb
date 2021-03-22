@@ -13,7 +13,7 @@ class ItemController < ApplicationController
 
     intbox = Sale.foo(1,100)
  
-    if intbox.floor <= 5
+    if intbox.floor <= 1
      @probability = 1 # 判定変数 ・・・ 真1
     else 
      @probability = 0 # 判定変数 ・・・ 偽0

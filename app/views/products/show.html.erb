@@ -7,25 +7,25 @@
       <P>映画化された</P>
       <h1>BOOKS INTRODACTION</h1>
     </div>
-    <h1 class = "book_title"><%= @product.title %></h1>
+    <h1 class = "book_title">商品名: <%= @product.title %></h1>
     <ul class="pv1">
       <% if @product.model? %>
-        <li class="inline-block"><%= @product.model %></li>
+        <li class="inline-block">ジャンル: <%= @product.model %></li>
       <% end %>
 
       <% if @product.novel? %>
-        <li class="inline-block"><%= @product.novel %></li>
+        <li class="inline-block">種類: <%= @product.novel %></li>
       <% end %>
 
       <% if @product.finish? %>
-        <li class="inline-block"><%= @product.finish %></li>
+        <li class="inline-block">おすすめ度 <%= @product.finish %></li>
       <% end %>
 
       <% if @product.price? %>
-        <li class="inline-block"><%= @product.price %></li>
+        <li class="inline-block">単価: <%= @product.price %></li>
       <% end %>
 
-      <li class="inline-block"><%= @product.description %></li>
+      <li class="inline-block">あらすじ: <%= @product.description %></li>
 
       <div class="show_img">
         <%= image_tag(@product.image_url(:default) ,class: "product_img")%>

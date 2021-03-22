@@ -34,8 +34,11 @@ document.addEventListener("turbolinks:load", function () {
 });
 
 //----------------------------
-$(function () {
+/*$(function () {
     $(".product-index-grid").slick({
         dots: true,
+        autoplay: true,
+        autoplaySpeed: 1000,
     });
 });
+*/

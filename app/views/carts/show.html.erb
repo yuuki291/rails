@@ -1,5 +1,5 @@
 <div class="keep-shopping pv1 mt4 has-text-right" style="margin-top: 2vw">
-  <%= link_to 'keep Shopping', products_path, class: 'button is-warning' %>
+  <%= link_to 'keep Shopping', root_path, class: 'button is-warning' %>
 </div>
 <hr/>
 <section class="section">
@@ -12,7 +12,7 @@
       <div class="column total">
         <h4 class="title is-4">
         <%= form_with(url: item_pay_path, method: :get ,local: true) do %>
-           <span class="f5">Total:<%=(@cart.total_price)%>円</span>
+           <span class="f5">合計:<%=(@cart.total_price)%>円</span>
     <div class= "script">
            <script
      type="text/javascript"
