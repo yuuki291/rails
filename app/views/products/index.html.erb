@@ -1,0 +1,43 @@
+<% content_for :header do %>
+<section class="hero is-warning">
+ <div class="clear-fix">
+  <ul class="nav">
+    <li><%= link_to 'Contact', :inquiries  ,class: "a1"%></li>
+  </ul>
+ </div>
+</section>
+<% end %>
+
+<div class ="content">
+  <div class="title">
+    <P style="text-align: center; font-size: 3vw;">映画化された</P>
+    <h1 style="text-align: center; font-size: 5vw;">BOOKS INTRODACTION</h1>
+  </div>
+  <div class="product-index-grid pt4">
+    <% @products.each do |product| %>
+      <div class="product border-light">
+        <div class="product-thumb">
+          <div>
+            <%= link_to image_tag(product.image_url(:thumb) ,class: "product_img"), product  %><br>
+            <h2 style="margin-left:10vw; margin-bottom:0px">商品名: <%= product.title %></h2><br>
+            <h2 style="margin-left:10vw; margin-top:0px; margin-bottom:5rem">単価: <%= product.price %></h2><br>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
+
+<div class="content">
+  <div class="title">
+    <P>新着</P>
+    <h1>News&Books Launch</h1>
+  </div>
+  <div class="text">
+    <p class="tips">トピックス一覧はこちら>>></p>
+    <p><span class="date">2020/12/02    </span>東野圭吾・著 新着のお知らせ</p>
+    <p><span class="date">2020/11/014    </span>youtubeにて本の要約を始めました</p>
+    <p><span class="date">2020/10/27    </span>ストアページを更新しました！詳細はこちらから</p>
+  </div>
+</div>
+

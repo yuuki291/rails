@@ -1,0 +1,103 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ @import "store";
+ @import "registrations";
+ @import "inquiries";
+ @import "item";
+ @import "line_items";
+ @import "payjp";
+ @import "products";
+ @import "scaffolds";
+
+ body{
+    background-color: #fff3d0;
+}
+
+a{
+    text-decoration: none;
+    right: 17vw;
+    font-size: 2.5vw;
+}
+
+
+.fcontent{
+    //margin: 20px;
+    float: left;
+}
+
+.fcontent p{
+    margin-top: 0;
+    background-color: rgb(182, 181, 179);
+}
+
+.shoptxt{
+    margin: 0 50px;
+    float: left;
+}
+
+.socialtxt{
+    display: inline;
+}
+
+.fcontent::after .shoptxt::after{
+    content:"";
+    display: block;
+    clear: both;
+}
+
+.shoptxt p,.socialtxt p{
+    color:white;
+    background-color: black;
+
+}
+
+.shoptxt ul,.shoptxt p{
+    margin-top: 0;
+}
+
+.nav {
+    list-style-type: none;
+}
+
+.section > div, .chjks, .hdsui, .hdsuicds > p{
+    font-size: 2.5vw;
+    margin-bottom: 3vw;
+}
+
+.script, .button-is, .navbar-brand1, .a, .item_img{
+    position: relative;
+
+}
+.script{
+    top: 2vw;
+}
+
+.button-is{
+    bottom: 13vw;
+    right: 6vw;
+    font-size: 3vw;
+}
+
+.navbar-brand1{
+   left: 10vw;
+   font-size: 3vw;
+}
+
+.rogo{
+    width: 20vw;
+}
+
